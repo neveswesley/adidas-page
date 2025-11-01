@@ -27,7 +27,6 @@ section {
     padding: 3rem 2rem;
     margin: 0 auto;
     max-width: 1200px;
-    border: 1px solid red;
 
 }
 
@@ -171,15 +170,15 @@ section {
     cursor: pointer;
 }
 
-.box-container:hover{
+.box-container:hover {
     background-color: #fff;
 }
 
-.box-container:hover>*{
+.box-container:hover>* {
     color: black;
 }
 
-.box-container img {
+.box-container .tenis {
     border-radius: 50%;
     border: 1px solid var(--main-color);
 }
@@ -190,8 +189,7 @@ section {
     padding: 0 1rem;
 }
 
-.box-container h3:hover {
-}
+.box-container h3:hover {}
 
 .box-container p {
     color: #fff;
@@ -205,4 +203,67 @@ section {
     text-decoration: line-through;
     font-size: 1.5rem;
     font-weight: 100;
+}
+
+.review-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+
+}
+
+.review-box-container {
+    border: var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    gap: 3rem;
+}
+
+.review-box-container p {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 2.5rem
+}
+
+.review-box .review-box-container h3 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.review-box .review-box-container .clientes {
+    border-radius: 50%;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer {
+    
+    text-align: center;
+}
+
+.footer .share {
+    display: flex;
+    cursor: pointer;
+    gap: 1.5rem;
+    padding: 1.2rem;
+    justify-content: center;
+}
+
+.footer .share img{
+    margin: 0.4rem;
+    padding: 0.7rem;
+}
+
+.footer .share img:hover {
+    background-color: var(--main-color);
 }
