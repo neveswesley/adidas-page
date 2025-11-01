@@ -121,7 +121,6 @@ section {
     display: flex;
     align-items: center;
     background-color: var(--black);
-    gap: 4rem;
 }
 
 .title {
@@ -138,6 +137,7 @@ section {
 }
 
 .content{
+    padding: 3rem;
 }
 .content h3 {
     color: #fff;
